@@ -20,7 +20,7 @@
   position: fixed;
   width: 100%;
   z-index: 5;
-  height: 60px;
+  height: 55px;
 }
 
 @media print, screen and (min-width: 1024px) {
@@ -29,8 +29,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -52,8 +52,8 @@
   width: 52px;
   height: 30px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border: none;
   font: inherit;
@@ -82,17 +82,17 @@
 
 .header .inner .nav-btn.-active span:first-child {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .header .inner .nav-btn.-active span:nth-child(2) {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .header .inner .nav-btn.-active span:last-child {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .header .inner .nav-btn span {
@@ -193,7 +193,7 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 }
 
@@ -212,7 +212,8 @@
 }
 
 body {
-  font-family: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho', serif;
+  font-family: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN',
+    'Yu Mincho', 'MS PMincho', serif;
   color: #fff;
   width: 100%;
 }
@@ -249,7 +250,7 @@ main {
     background-color: #ff0000;
     border-radius: 15px;
     -webkit-box-shadow: 2px 2px 6px #ff0000;
-            box-shadow: 2px 2px 6px #ff0000;
+    box-shadow: 2px 2px 6px #ff0000;
     font-size: 16px;
     padding: 10px 20px;
   }
@@ -259,7 +260,7 @@ main {
     -webkit-transition: 1s;
     transition: 1s;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border: none;
   }
 }
@@ -428,7 +429,7 @@ main {
   margin: 0 auto;
   width: 70%;
   -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
+  box-shadow: 2px 2px 10px #000;
 }
 
 .service-item:first-child {
@@ -444,7 +445,7 @@ main {
     margin: 0 auto;
     width: 70%;
     -webkit-box-shadow: 2px 2px 10px #000;
-            box-shadow: 2px 2px 10px #000;
+    box-shadow: 2px 2px 10px #000;
   }
   .service-item:first-child {
     margin-bottom: 50px;
@@ -458,7 +459,7 @@ main {
   .service-item {
     width: 30%;
     -webkit-box-shadow: 2px 2px 10px #000;
-            box-shadow: 2px 2px 10px #000;
+    box-shadow: 2px 2px 10px #000;
     margin-bottom: 50px;
   }
 }
@@ -537,7 +538,7 @@ main {
   padding: 60px 0 60px 0;
   background-color: #fff;
   -webkit-box-shadow: 5px 5px 10px #6e6e6e;
-          box-shadow: 5px 5px 10px #6e6e6e;
+  box-shadow: 5px 5px 10px #6e6e6e;
 }
 
 @media print, screen and (min-width: 599px) and (max-width: 1023px) {
@@ -628,7 +629,7 @@ main {
   padding: 10px 20px;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 6px #ff0000;
-          box-shadow: 2px 2px 6px #ff0000;
+  box-shadow: 2px 2px 6px #ff0000;
   font-size: 16px;
 }
 
@@ -638,7 +639,7 @@ main {
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
 }
 
@@ -727,7 +728,7 @@ main {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-bottom: 40px;
   }
 }
@@ -840,7 +841,7 @@ main {
   padding: 10px 20px;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 6px #ff0000;
-          box-shadow: 2px 2px 6px #ff0000;
+  box-shadow: 2px 2px 6px #ff0000;
   font-size: 16px;
 }
 
@@ -850,7 +851,7 @@ main {
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
 }
 
@@ -895,7 +896,11 @@ main {
   .production-item .production-list .production-text .production-text-content {
     width: 100%;
   }
-  .production-item .production-list .production-text .production-text-content p {
+  .production-item
+    .production-list
+    .production-text
+    .production-text-content
+    p {
     margin-bottom: 50px;
     line-height: 20px;
   }
@@ -972,7 +977,7 @@ main {
   color: #fff;
   font-weight: bold;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .contact-cont .contact-btn a:hover {
