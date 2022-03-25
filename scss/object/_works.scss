@@ -1,0 +1,63 @@
+.works-list {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  @include overTab {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include pcoverTab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+}
+
+.works-item {
+  padding-bottom: 100px;
+  width: 100%;
+  @include overTab {
+    padding-bottom: 120px;
+    width: 100%;
+  }
+  @include pcoverTab {
+    width: 40%;
+    padding-bottom: 80px;
+  }
+}
+
+.works-list .works-image {
+  width: 100%;
+  @include spoverTab {
+    height: 250px;
+  }
+  @include pcoverTab {
+    height: 250px;
+  }
+
+  @include overTab {
+    height: 400px;
+  }
+}
+
+.works-list .works-image:hover {
+  -webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.works-list .works-text {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  color: #fff;
+  line-height: 40px;
+  @include spoverTab {
+    font-size: 20px;
+  }
+}

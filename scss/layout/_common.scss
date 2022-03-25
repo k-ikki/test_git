@@ -1,0 +1,110 @@
+.btn a {
+  visibility: hidden;
+  @include overTab {
+    visibility: hidden;
+  }
+  @include pcoverTab {
+    visibility: visible;
+    background-color: cl(red);
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px cl(red);
+    font-size: 16px;
+    padding: 10px 20px;
+    &:hover {
+      background-color: cl(black);
+      color: cl(white);
+      transition: 1s;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+
+.top {
+  padding-top: 150px;
+  margin-bottom: 150px;
+  @include overTab {
+    padding-top: 200px;
+    margin-bottom: 200px;
+  }
+  @include pcoverTab {
+    padding-top: 200px;
+    margin-bottom: 200px;
+  }
+}
+
+.top-text {
+  font-size: 25px;
+  line-height: 30px;
+  @include overTab {
+    font-size: 35px;
+    line-height: 50px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  @include pcoverTab {
+    font-size: 35px;
+    line-height: 50px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  text-align: center;
+  color: cl(white);
+  width: 100%;
+  background-color: rgba(253, 253, 253, 0.5);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.back-image {
+  @include overTab {
+    height: 100%;
+  }
+  @include pcoverTab {
+    height: auto;
+  }
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  img {
+    @include overTab {
+      height: 100%;
+    }
+    @include pcoverTab {
+      height: auto;
+    }
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.cmn-title {
+  @include overTab {
+    font-size: 30px;
+    padding: 100px 0 80px 0;
+  }
+  @include pcoverTab {
+    font-size: 30px;
+    padding: 100px 0 80px 0;
+  }
+  text-align: center;
+  font-size: 25px;
+  padding: 100px 0 80px 0;
+}
+
+#page-top {
+  position: fixed;
+  z-index: 3;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  color: cl(red);
+  opacity: 0.5;
+  @include overTab {
+    font-size: 40px;
+  }
+  @include pcoverTab {
+    font-size: 40px;
+  }
+}

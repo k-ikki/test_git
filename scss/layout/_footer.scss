@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  color: cl(white);
+  background-color: cl(black);
+  position: relative;
+  z-index: 2;
+  .inner {
+    padding: 30px 0 20px 0;
+  }
+  h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    a {
+      color: cl(white);
+    }
+  }
+}

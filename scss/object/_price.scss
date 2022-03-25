@@ -1,0 +1,138 @@
+.price-list {
+  @include overTab {
+    margin: 0 150px 0 150px;
+    padding: 100px 0 100px 0;
+  }
+  @include pcoverTab {
+    margin: 0 250px 0 250px;
+    padding: 100px 0 100px 0;
+  }
+  margin: 0 50px 0 50px;
+  padding: 60px 0 60px 0;
+  background-color: cl(white);
+  box-shadow: 5px 5px 10px cl(grey);
+}
+
+.price .price-item {
+  text-align: center;
+  padding-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:nth-child(3) {
+    padding-bottom: 50px;
+  }
+  @include overTab {
+    text-align: center;
+    padding-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include pcoverTab {
+    text-align: center;
+    padding-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.price .price-item-service {
+  margin-bottom: 30px;
+  width: 100%;
+  @include overTab {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  @include pcoverTab {
+  }
+}
+
+.price .price-item .price-item-cont {
+  p {
+    line-height: 20px;
+    margin-bottom: 20px;
+    &:nth-child(2) {
+      @include spoverTab {
+        font-size: 10px;
+      }
+    }
+    span {
+      color: cl(red);
+    }
+  }
+  @include pcoverTab {
+    padding-left: 50px;
+  }
+}
+
+.price-btn {
+  text-align: center;
+  padding-top: 30px;
+  a {
+    visibility: visible;
+    display: inline-block;
+    background-color: cl(red);
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px cl(red);
+    font-size: 16px;
+    &:hover {
+      background-color: cl(black);
+      color: cl(white);
+      transition: 1s;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+.price-item-service {
+  p {
+    font-size: 20px;
+    line-height: 60px;
+  }
+  span {
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+
+.price {
+  background-image: url(/image/back-image02.jpg);
+  background-size: cover;
+  background-position: center;
+  color: cl(black);
+}
+
+.price-text {
+  @include overTab {
+    padding-left: 200px;
+    text-align: left;
+  }
+  @include pcoverTab {
+    padding-left: 200px;
+    text-align: left;
+  }
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 350px;
+}
+
+.price-icon {
+  @include spoverTab {
+    width: 64px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  @include overTab {
+    width: 64px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  @include pcoverTab {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}

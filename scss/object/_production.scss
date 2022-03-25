@@ -1,0 +1,134 @@
+.production-item {
+  .production-list {
+    color: cl(black);
+    text-align: center;
+    .production-text {
+      margin-top: 50px;
+      .production-title {
+        @include spoverTab {
+          margin: 0 auto;
+          width: 50%;
+          margin-bottom: 30px;
+          font-size: 15px;
+        }
+        font-size: 20px;
+        padding-bottom: 3px;
+        border-bottom: 2px solid cl(red);
+        margin-bottom: 30px;
+      }
+      .production-text-content {
+        @include spoverTab {
+          text-align: left;
+          margin: 0 auto;
+          width: 80%;
+          font-size: 10px;
+        }
+        p {
+          margin-bottom: 35px;
+          line-height: 20px;
+        }
+      }
+      .btn a {
+        visibility: visible;
+        display: inline-block;
+        background-color: cl(red);
+        padding: 10px 20px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 6px cl(red);
+        font-size: 16px;
+        &:hover {
+          background-color: cl(black);
+          color: cl(white);
+          transition: 1s;
+          box-shadow: none;
+          border: none;
+        }
+      }
+    }
+    @include overTab {
+      .production-title {
+        text-align: left;
+        width: 100%;
+      }
+      .production-text-content {
+        text-align: left;
+      }
+    }
+    @include pcoverTab {
+      text-align: left;
+      display: flex;
+      padding-left: 50px;
+      padding-top: 40px;
+      padding-bottom: 60px;
+      padding-right: 50px;
+      color: cl(black);
+      .production-image {
+        img {
+          width: 535px;
+        }
+      }
+      .production-text {
+        margin-left: 30px;
+        margin-right: 50px;
+        width: 60%;
+        margin-top: 0;
+        .production-title {
+          width: 100%;
+          padding-bottom: 3px;
+          margin-bottom: 50px;
+          font-size: 20px;
+          border-bottom: 2px solid cl(red);
+        }
+        .production-text-content {
+          width: 100%;
+          p {
+            margin-bottom: 50px;
+            line-height: 20px;
+          }
+        }
+        .btn a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.production-cont {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  @include overTab {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+  @include pcoverTab {
+    padding: 0;
+  }
+}
+
+.production .cmn-title {
+  background-color: cl(white);
+  color: cl(black);
+}
+
+.production {
+  background-color: cl(white);
+}
+
+.arrow {
+  width: 50px;
+  margin: 0 auto;
+  padding: 30px 0;
+  @include overTab {
+    width: 100px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  @include pcoverTab {
+    width: 100px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+}
